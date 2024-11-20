@@ -91,7 +91,7 @@ AlwaysBreakTemplateDeclarations: true
 # -- WebKit - 与 Attach 类似，但在函数定义前换行 
 # -- Custom - 依赖 BraceWrapping
 #   注：这里认为语句块也属于函数
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Custom
 
 # 大括号换行，只有当BreakBeforeBraces设置为Custom时才有效
 BraceWrapping:
@@ -116,7 +116,7 @@ BraceWrapping:
   # catch之前
   BeforeCatch: false
   # else之前
-  BeforeElse: false
+  BeforeElse: true
   # 继续缩进大括号
   IndentBraces: false
   # 分离空函数

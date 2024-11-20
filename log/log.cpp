@@ -30,6 +30,7 @@ bool Log::init(const char *file_name, int close_log, int log_buf_size, int split
         m_is_async = true;
         m_log_queue = new block_queue<string>(max_queue_size);
         pthread_t tid;
+        //线程地址，类型，调用函数，调用函数的参数
         pthread_create(&tid, NULL, flush_log_thread, NULL);
     }
 
